@@ -5,6 +5,15 @@ body {
   	color: #fff;
 }
 
+.navbar a {
+	color: #980900;
+}
+
+.navbar .dropdown-menu {
+	right: 0;
+	left:auto;
+}
+
 .primary-color {
 	color: #980900;
 }
