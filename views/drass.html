@@ -30,9 +30,15 @@
 			window.canScroll = true;
 			const section = 'SECTION'
 
+			function scrollToSection(e) {
+				let el = document.getElementById('s-'+e);
+				el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+				show(el.dataset.icon)
+			}
+
 			function show(e) {
 				Array.from(document.getElementsByClassName('bi-circle-fill')).map(e => { e.className = "fs-6 bi bi-circle-fill d-none"; });
-				console.log('i-'+e)
+				if(!e) return;
 				document.getElementById('i-'+e).className = "fs-6 bi bi-circle-fill";
 			}
 		
@@ -86,8 +92,9 @@
 		  </div>
 		</nav>
 
-  	<div class="main container-fluid position-relative">
-  		<div class="row sticky-top pe-0 col-md-5 offset-md-7">
+  	<div class="main container-fluid position-relative p-0">
+  		<!-- Sticky Content --> 
+  		<div class="row sticky-top pe-0 col-12 col-lg-5 offset-lg-7">
   			<div class="row"> 
 	  			<div class="d-block navbar-hidden">
 	  				<img src="../img/rezilient-long-logo.svg" alt="">
@@ -122,20 +129,20 @@
   		</div>
 
 			<!-- Main Content --> 
-  		<div class="position-relative z-100">
-  			<section class="d-table d-md-none ">
+  		<div class="position-relative z-100 p-0">
+  			<section class="d-table d-lg-none">
 					<div class="row vh-100">
-					  <div class="container col-md-7 col-12 d-block d-md-table-cell reason-container">
+					  <div class="container p-0 col-12 col-lg-7 d-block d-md-table-cell reason-container">
 					    <div class="position-relative text-start p-5">
 					  		
 						  </div>
 					  </div>
-					  <div class="d-none d-md-block col-md-5 vh-100 bg-transparent"></div>
+					  <div class="d-none d-lg-block col-md-5 vh-100 bg-transparent"></div>
 					</div>
 				</section>
-	  		<section class="reason-section" data-icon="speed">
+	  		<section id="s-speed" class="reason-section" data-icon="speed">
 	  			<div class="row">
-					  <div class="container p-1 col-md-7 col-12 d-block d-md-table-cell reason-container">
+					  <div class="container p-1 col-12 col-lg-7 d-block d-md-table-cell reason-container">
 					  	<img class="related-pic" src="../img/dras/time.svg">
 					  	<div class="position-relative text-start p-5">
 					  		<h1 class="display-6 fw-bold my-4">We care about your time.</h1>
@@ -157,12 +164,12 @@
 						    </div>
 						  </div>
 					  </div>
-					  <div class="d-none d-md-block col-md-5 vh-100 bg-transparent"></div>
+					  <div class="d-none d-lg-block col-md-5 vh-100 bg-transparent"></div>
 					</div>
 				</section>
-				<section class="reason-section" data-icon="performance">
+				<section id="s-performance" class="reason-section" data-icon="performance">
 					<div class="row">
-					  <div class="container col-12 col-md-7 d-block d-md-table-cell reason-container">
+					  <div class="container p-0 col-12 col-lg-7 d-block d-md-table-cell reason-container">
 					  	<img class="related-pic" src="../img/dras/performance.svg">
 					  	<div class="position-relative text-start p-5">
 					  		<h1 class="display-6 fw-bold my-4">We care about your performance.</h1>
@@ -180,12 +187,12 @@
 						    </div>
 						  </div>
 					  </div>
-					  <div class="d-none d-md-block col-md-5 vh-100 bg-transparent"></div>
+					  <div class="d-none d-lg-block col-md-5 vh-100 bg-transparent"></div>
 					</div>
 				</section>
-				<section class="reason-section" data-icon="security">
+				<section id="s-security" class="reason-section" data-icon="security">
 					<div class="row">
-					  <div class="container col-md-7 col-12 d-block d-md-table-cell reason-container">
+					  <div class="container p-0 col-12 col-lg-7 d-block d-md-table-cell reason-container">
 					  	<img class="related-pic" src="../img/dras/security.svg">
 					    <div class="position-relative text-start p-5">
 					  		<h1 class="display-6 fw-bold my-4">We care about your security.</h1>
@@ -207,12 +214,12 @@
 						    </div>
 						  </div>
 					  </div>
-					  <div class="d-none d-md-block col-md-5 vh-100 bg-transparent"></div>
+					  <div class="d-none d-lg-block col-md-5 vh-100 bg-transparent"></div>
 					</div>
 				</section>
-				<section class="reason-section" data-icon="flexibility">
+				<section id="s-flexibility" class="reason-section" data-icon="flexibility">
 					<div class="row">
-					  <div class="container col-md-7 col-12 d-block d-md-table-cell reason-container">
+					  <div class="container p-0 col-12 col-lg-7 d-block d-md-table-cell reason-container">
 					  	<img class="related-pic" src="../img/dras/choice.svg">
 					    <div class="position-relative text-start p-5">
 					  		<h1 class="display-6 fw-bold my-4">We care about your control.</h1>
@@ -234,7 +241,7 @@
 						    </div>
 						  </div>
 					  </div>
-					  <div class="d-none d-md-block col-md-5 vh-100 bg-transparent"></div>
+					  <div class="d-none d-lg-block col-md-5 vh-100 bg-transparent"></div>
 					</div>
 				</section>
 			</div>

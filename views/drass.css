@@ -10,6 +10,13 @@ section, header, footer {
   display: table;
   text-align: center;
   color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+section > .row {
+  width: 100%;
 }
 
 h2 span {
@@ -65,7 +72,8 @@ h2 span {
 
 .sticky-top .emoji {
   display: flex;
-  justify-content:  center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .sticky-top .emoji-container {
@@ -117,7 +125,7 @@ h2 span {
   font-style:  italic;
   font-size: 1.3rem;
   font-family: 'Helvetica Neue', 'Roboto', sans-serif;
-  line-height: 3rem;
+  line-height: 1.3rem;
 }
 
 .reason {
@@ -127,14 +135,13 @@ h2 span {
 
 .reason h2, .reason i {
   width: auto;
-  line-height: 3rem;
 }
 
 .sticky-top h2 { 
   color: #000; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .reason-section:nth-of-type(odd) {
     /*background: linear-gradient(to top, #980900, #384D48) fixed;*/
     background-color: #384D48;
@@ -143,6 +150,26 @@ h2 span {
   .reason-section:nth-of-type(even) {
     /*background: linear-gradient(to top, #980900, #6d9eebff) fixed;*/
     background-color: #980900;
+  }
+
+  .emoji-container {
+    width:  40%;
+  }
+
+  .reason h2 {
+    font-size:  1.2rem;
+    line-height: 2rem;
+  }
+
+  .reason i {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:  768px) {
+  .reason h2 {
+    font-size:  0.9rem;
+    line-height: 2rem;
   }
 }
 
