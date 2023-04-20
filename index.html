@@ -1,162 +1,554 @@
-<!doctype html>
-<html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Rezilient Technologies</title>
-		<meta property='og:title' content='Rezilient Technologies'/>
-		<meta property="og:description" content="Your one stop solution for backups and disaster recovery" />
-		<meta property="og:type" content= "website" />
-		<meta property="og:url" content= "https://rezilient.biz/" />
-		<meta property="og:image" content="https://rezilient.biz/img/favicon.svg" />
-		<meta name="theme-color" content="#ffffff">
-		<!-- Favicon -->
-		<link rel="apple-touch-icon" href="img/favicon.svg">
-		<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-		<link rel="mask-icon" href="img/favicon.svg" color="#ffffff">
-		<!-- Fonts -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-		<!-- Bootstrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="index.css">
-	</head>
-  <body>
-  	<!-- Navigation Bar -->
-  	<nav class="navbar navbar-light bg-light">
-	  <div class="container-fluid">
-	    <a class="navbar-brand pt-0 pb-0 ps-2" href="">
-	      <img src="img/rezilient-long-logo.svg" alt=""  height="75">
-	    </a>
-	    <ul class="nav justify-content-end">
-			<li class="nav-item dropdown">
-			    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Products</a>
-			    <ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="./views/drass.html">Disaster Recovery As Service (DRaaS)</a></li>
-					<li><a class="dropdown-item" href="#">Long Term Retention Plan</a></li>
-					<li><a class="dropdown-item" href="#">Data Migration</a></li>
-			    </ul>
-			  </li>
-			<li class="nav-item"><a class="nav-link" aria-current="page" href="#">Contact Us</a></li>
-	    </ul>
-	  </div>
-	</nav>
-	    
-	<!-- Main Content -->
-  	<div class="container-fluid p-0">
-			<div class="first-row secondary-bg-color row">
-				<div class="col-md-7 col-12 float-end">
-					<img src="img/2.svg" id="server-img" class="rounded " alt="bot helps human in getting data sorted.">
-				</div>
-				<div class="col-md-5 col-12 d-flex justify-content-begin align-items-center p-md-1 main-text">
-					<div class="col-md-11 col-12 text-begin">
-						<h1>Emerging Asian Independent Cloud Solutions Distributor</h1>
-						<p>
-							We proud ourselves in assisting our partners and clients to manage their cloud infrastructure effortlessly. We cover wide range of solution that involves support for multiple platforms and vendors. Rezilient will be your one stop solution to maintain data integrity and efficiency your of cloud infrastructure.
-						</p>
-						<button type="button" class="btn btn-outline-light border-3 rounded-0">Learn More</button>
-					</div>
-				</div>
-			</div>
+<!DOCTYPE html>
+<html lang="en">
 
-			<div class="second-row secondary-color row row-cols-1 row-cols-md-3 g-4">
-				<div class="col">
-				    <div class="card rounded-0 h-100">
-						<img src="img/secure.svg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Data Integrity</h5>
-							<p class="card-text">We able to securely transfer data during replication and ransomware attack and prevent any data corruption or data loss. We use state of art encrytion method to keep replication and long term data storage to prevent any data leak.</p>
-						</div>
-				    </div>
-				</div>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-				<div class="col">
-				    <div class="card rounded-0 h-100">
-				    	<img src="img/replication.svg" class="card-img-top" alt="Upload data to cloud.">
-				    	<div class="card-body">
-					        <h5 class="card-title">Data Replication</h5>
-					        <p class="card-text">We provide continuous data replication with customizable RPO for clients which goes as low as 4s different. We can achieve RTO as good as boot up time.</p>
-				    	</div>
-				    </div>
-			 	</div>
-			 
-			  	<div class="col">
-			    	<div class="card rounded-0 h-100">
-				      	<img src="img/scalable.svg" class="card-img-top" alt="...">
-				      	<div class="card-body">
-					        <h5 class="card-title">Scalable Solution</h5>
-					        <p class="card-text">We provide Long-Term-Retention plan for clients to store backups as part of compliance and disaster recovery manangement. The data in this plan will be available at all time and will be recovered at on-demand. Clients have option of cloud platform to chose as their storage for Long-Term Retention.</p>
-				    	</div>
-			    	</div>
-				</div>
-			</div>
+  <title>Rezilient Technolgoies</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-			<div class="third-row primary-color">
-				<h1 class="display-6 secondary-color pb-5 pt-5 fw-lighter">What we offer?</h1>
-				<div class="row">
-					<div class="col-md-7 col-12">
-						<div class="check-list d-flex flex-column justify-content-end align-items-sm-end align-items-center ps-md-5">
-							<h5 class="pb-2 fs-2 fw-light">
-								Disaster Recovery Solution <i class="bi-cloud-check-fill ps-2"></i>
-							</h5>
-							<h5 class="pb-2 fs-2 fw-light">
-								Continuous Data Replication <i class="bi bi-cloud-check-fill ps-2"></i>
-							</h5>
-							<h5 class="pb-2 fs-2 fw-light">
-								Secured Data Transfer <i class="bi bi-cloud-check-fill ps-2"></i>
-							</h5>
-							<h5 class="pb-2 fs-2 fw-light">
-								Long Term Data Retention <i class="bi bi-cloud-check-fill ps-2"></i>
-							</h5>
-							<h5 class="pb-2 fs-2 fw-light">
-								Cloud Launch Configuration <i class="bi bi-cloud-check-fill ps-2"></i>
-							</h5>
-						</div>
-					</div>
-					<div class="col-md-5 col-12">
-						<img src="img/checklist.svg" id="third-bg" class="rounded" alt="bot helps human in getting data sorted.">
-					</div>
-				</div>
-			</div>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-			<div class="forth-row primary-color">
-				
-			</div>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-			<div class="forth-row primary-dk-bg-color">
-				<div class="row d-flex flex-row p-5">
-					<h3 class="mb-4"> Reach us at </h3>
-					<div class="col-md-2 col-12"><img class="footer-logo" src="img/favicon.svg" alt=""  height="75"></div>
-					<div class="address col-md-4 col-12 d-flex flex-row align-items-start pe-1">
-						<div>
-							<h5><i class="bi bi-house-door-fill"></i></h5>
-						</div>
-						<div class="ps-3">
-							<h5 class="fw-light">No 29-07, Jalan Riong,</h5>
-							<h5 class="fw-light">59100 Bangsar,</h5>
-							<h5 class="fw-light">Kuala Lumpur</h5>
-						</div>
-					</div>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-					<div class="contact col-md-5 col-12 d-flex flex-row align-items-start ps-5 pe-5">
-						<div class="ps-2">
-							<h5 class="fw-light"><i class="bi bi-telephone-fill pe-3"></i> <a href="tel:+60128856142">+6012-885-6142</a></h5>
-							<h5 class="fw-light"><i class="bi bi-envelope-fill pe-3"></i> <a href="mailto: raj@rezilient.biz">raj@rezilient.biz</a></h5>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-	
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script>
-      $(document).foundation();
-    </script>
+  <!-- =======================================================
+  * Template Name: Logis
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-  </body>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Rezilient Technologies</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#go-to-about">About</a></li>
+          <li><a href="#go-to-service">Services</a></li>
+          <li><a href="#go-to-contact">Contact</a></li>
+          <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2>Your Trustable Information Technology (IT) Services Partner</h2>
+          <p >Looking for professional IT services? Look no further than Rezilient. Our comprehensive offerings include website design, webmail hosting, domain configuration, disaster recovery, backup storage, and IT maintenance.</p>
+
+          <div class="row gy-4" >
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Clients</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Projects</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Support</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="assets/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-paintbrush"></i></div>
+            <div>
+              <h4 class="title">Web Design</h4>
+              <p class="description">We offer professional web design services for businesses, creating visually appealing and user-friendly websites that reflect brand identity and are optimized for all devices. From design to maintenance, we provide overall solutions to establish a strong online presence.</p>
+              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" >
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-server"></i></div>
+            <div>
+              <h4 class="title">Domain & Hosting</h4>
+              <p class="description">Establish an online presence with our domain and hosting services. We offer reliable and affordable domain registration, web hosting, and email services, optimized for speed, security, and accessibility. Our 24/7 customer support is available to assist with any issues. Choose from a wide variety of top-level domains and reliable hosting services.</p>
+              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" >
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <div>
+              <h4 class="title">Disaster Recovery</h4>
+              <p class="description">Ensure your business continuity with our disaster recovery services. We offer backup and recovery services, disaster recovery planning, and 24/7 support to help you quickly recover from any unforeseen events. Our solutions are tailored to meet your specific needs and ensure minimal downtime.</p>
+              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+
+      </div>
+      <a id="go-to-about"></a>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about pt-0">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-center order-lg-last order-first">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <h3>About Us</h3>
+            <p>
+              We provide web hosting, design, and disaster recovery solutions. With years of experience, we offer advanced and secure services. Our expert team delivers tailored solutions for uninterrupted operations and a seamless user experience. Partner with us for all your online needs.
+            </p>
+            <ul>
+              <li >
+                <i class="bi bi-calendar-check"></i>
+                <div>
+                  <h5>Advanced</h5>
+                  <p>Responsive design is essential for providing an optimal user experience on any device, while a responsive disaster recovery plan minimizes downtime and data loss. Businesses that invest in both solutions can ensure they are prepared for any eventuality and maintain seamless operations.</p>
+                </div>
+              </li>
+              <li >
+                <i class="bi bi-cloud-check"></i>
+                <div>
+                  <h5>Availability</h5>
+                  <p>We provide exceptional solutions to ensure uninterrupted online services for our clients. Our unwavering commitment to providing unparalleled support helps mitigate potential disasters and ensures business continuity. In case of a disaster, our dedicated 24/7 support team is readily available to guide our clients through the recovery process, minimizing downtime.</p>
+                </div>
+              </li>
+              <li >
+                <i class="bi bi-shield-check"></i>
+                <div>
+                  <h5>Security</h5>
+                  <p>We offer cutting-edge solutions like firewalls, SSL certificates, and data encryption to secure websites from attacks and data breaches. Our security measures including access controls and secure backups protect critical data from disasters, reducing the risk of cyber threats and ensuring data confidentiality and integrity.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="service" class="services pt-0">
+       <a id="go-to-service"></a>
+      <div class="container">
+
+        <div class="section-header">
+          <span>Our Services</span>
+          <h2>Our Services</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" >
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/design.svg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Design</a></h3>
+              <p>We create responsive web designs that engage customers and drive business growth across all devices. Our tailored solutions reflect clients' brands and deliver measurable results. We provides ongoing support and expertise in the latest web design trends and technologies.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" >
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/domain.svg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Domain</a></h3>
+              <p>We offer a range of domain name options that reflect clients' brands and make it easy for their customers to find them online. Our friendly staffs allow clients to easily manage their domain names and ensure their online presence is secure and accessible.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" >
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/hosting.svg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Hosting</a></h3>
+              <p>We offer reliable and secure hosting solutions that keep our clients' websites up and running around the clock. With our 24/7 support and state-of-the-art infrastructure, our clients can focus on their business while we take care of their hosting needs.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" >
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/backup.svg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Backup Storage</a></h3>
+              <p>We offer secure and reliable solutions to protect our clients' valuable data. Our advanced technology ensures that data is stored and retrievable whenever needed, giving our clients peace of mind knowing their critical information is safe.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" >
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/dr.svg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Disaster Recovery</a></h3>
+              <p>We help businesses minimize downtime and data loss in the event of an unexpected outage or disaster. Our comprehensive solutions are designed to quickly restore data and systems, ensuring that our clients can get back to business as usual with minimal disruption.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" >
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/support.svg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">IT Support</a></h3>
+              <p>We offer fast and reliable assistance to our clients whenever they encounter technology issues. Our experienced technicians provide personalized solutions to ensure that our clients' technology is running smoothly, allowing them to focus on their core business operations.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <a id="go-to-contact"></a>
+      <div class="container">
+        <h3 class="text-center">Call To Action</h3>
+        <div>
+          <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.99298125454874!2d101.6744089674186!3d3.124387845494582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49906096954b%3A0x933ff0e3c3d3e544!2s29%2C%20Jalan%20Riong%2C%20Bangsar%2C%2059100%20Kuala%20Lumpur%2C%20Wilayah%20Persekutuan%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1681745023888!5m2!1sen!2smy" frameborder="0" allowfullscreen></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row contact gy-4 mt-4">
+          <div class="info col-lg-4">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Location:</h4>
+                <p>No 29-07, Jalan Riong, 59100 Bangsar, Kuala Lumpur</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>raj@rezilient.biz</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Call:</h4>
+                <p>+6012-885-6142</p>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+
+          <div class="send-mail col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+
+          <div class="col-md-5">
+            <img src="assets/img/design.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Our promises for our web design clients: </h3>
+            <p class="fst-italic">
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> We promise to create <span class="badge text-bg-secondary">custom-tailored designs</span> that meet the unique needs of your business.</li>
+
+              <li><i class="bi bi-check"></i> We promise to create designs that prioritize the <span class="badge text-bg-secondary">user experience</span>, ensuring that your website is intuitive, easy to navigate, and engaging for your visitors.</li>
+
+              <li><i class="bi bi-check"></i> We promise to create designs that are <span class="badge text-bg-secondary">responsive</span> and optimized for all devices, ensuring that websites functions seamlessly on all devices.</li>
+
+              <li><i class="bi bi-check"></i> We promise to create designs that prioritize <span class="badge text-bg-secondary">fast loading times</span>, ensuring that your website loads quickly and efficiently for your visitors.</li>
+
+              <li><i class="bi bi-check"></i> We promise to create designs that are <span class="badge text-bg-secondary">optimized for search engines</span>, ensuring that your website is visible and ranks high in search engine results pages.</li>
+
+              <li><i class="bi bi-check"></i> We promise to create designs that align with your <span class="badge text-bg-secondary">brand identity</span> and messaging, ensuring that your website is consistent with your overall brand image and reputation.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/hosting.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <h3>Our promises for our web hosting clients:</h3>
+            <ul>
+              <li><i class="bi bi-check"></i> We promise to provide <span class="badge text-bg-secondary">high availability</span> web hosting services to ensure that your website is accessible 24/7/365.</li>
+              <li><i class="bi bi-check"></i> We promise to provide <span class="badge text-bg-secondary">fast and reliable</span> web hosting services that ensure your website loads quickly and consistently for your visitors.</li>
+              <li><i class="bi bi-check"></i> We promise to provide <span class="badge text-bg-secondary">scalable</span> web hosting services that can accommodate your business's growth and changing needs.</li>
+              <li><i class="bi bi-check"></i> We promise to provide <span class="badge text-bg-secondary">secure</span> web hosting services that protect your website from malicious attacks and unauthorized access, ensuring the safety of your data and that of your customers.</li>
+              <li><i class="bi bi-check"></i> We promise to provide <span class="badge text-bg-secondary">expert support</span> that is available 24/7/365 to help you quickly resolve any issues you may encounter with your web hosting services.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5">
+            <img src="assets/img/backup.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Our promises for our disaster recovery clients:</h3>
+            <ul>
+              <li><i class="bi bi-check"></i> We promise to provide <span class="badge text-bg-secondary">rapid disaster recovery</span> services to minimize downtime and ensure that your business operations are quickly restored.</li>
+              <li><i class="bi bi-check"></i>We promise to <span class="badge text-bg-secondary">regularly backup</span> your critical data and systems to minimize data loss and ensure business continuity in the event of a disaster.</li>
+              <li><i class="bi bi-check"></i>We promise to work with you to develop and implement a comprehensive <span class="badge text-bg-secondary">business continuity plan</span> that outlines the steps to be taken in the event of a disaster.</li>
+              <li><i class="bi bi-check"></i> We promise to provide <span class="badge text-bg-secondary">redundancy</span> in our disaster recovery solutions to ensure that your critical systems and data are available even in the event of hardware or system failures.</li>
+              <li><i class="bi bi-check"></i> We promise to provide <span class="badge text-bg-secondary">secure</span> disaster recovery solutions that protect your data and systems from cyber threats, ensuring the safety and integrity of your business operations.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-header">
+          <span>Frequently Asked Questions</span>
+          <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="row justify-content-center" >
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What are the features offered in your web design services?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    We provide excellent user experience, visual appeal, usability, and search engine optimization (SEO). It's important to create a website that is easy to navigate, visually appealing, and optimized for search engines to improve visibility and traffic.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What are the features offered in your web hosting services?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    With our global partners we can ensures reliability, uptime, customer support, security, and pricing which fits your hosting requirements. It's important to choose a provider that can meet your specific needs and provide the necessary support and we're committed in providing them.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Why is disaster recovery important for businesses?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Disasters such as natural disasters, cyber-attacks, and system failures can disrupt business operations and lead to data loss, downtime, and financial loss. Disaster recovery ensures that businesses can quickly recover from these events, minimizing the impact on their operations and maintaining business continuity.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What disaster recovery solutions are available?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Disaster recovery solutions include data backup and recovery, redundancy and failover, virtualization, and cloud-based solutions. These solutions provide a range of options for businesses to choose from, based on their requirements and budget.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What kind of issues does your IT support handle?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Our IT support handles a range of issues related to computer hardware, software, network, and security. Some common issues include software installation and updates, virus and malware removal, hardware troubleshooting and repair, network connectivity issues, and data backup and recovery.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Rezilient Technologies</span>
+          </a>
+          <p>Looking for professional IT services? Look no further than Rezilient. Our comprehensive offerings include website design, webmail hosting, domain configuration, disaster recovery, backup storage, and IT maintenance.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
