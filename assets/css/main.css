@@ -20,8 +20,9 @@
 /* Colors */
 :root {
   --color-default: #0a0d13;
-  --color-primary: #0d42ff;
+  --color-primary: #a61c01;
   --color-secondary: #0e1d34;
+  --color-hover: #a61c01;
 }
 
 /* Smooth scroll behavior */
@@ -76,7 +77,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #001973;
+  color: var(--color-primary);
   position: relative;
   z-index: 2;
   margin-bottom: 20px;
@@ -367,7 +368,7 @@ section {
   .navbar .get-a-quote:hover,
   .navbar .get-a-quote:focus:hover {
     color: #fff;
-    background: #2756ff;
+    background: var(--color-secondary);
   }
 
   .navbar .dropdown ul {
@@ -583,7 +584,7 @@ section {
 }
 
 .featured-services .service-item .icon i {
-  color: #001f8d;
+  color: var(--color-secondary);
   font-size: 48px;
   transition: 0.3s;
 }
@@ -626,7 +627,7 @@ section {
 .featured-services .service-item:hover .title,
 .featured-services .service-item:hover .readmore,
 .featured-services .service-item:hover .icon i {
-  color: var(--color-primary);
+  color: var(--color-hover);
 }
 
 /*--------------------------------------------------------------
@@ -636,7 +637,7 @@ section {
   font-weight: 700;
   font-size: 32px;
   font-family: var(--font-secondary);
-  color: #001f8d;
+  color: var(--color-primary);
 }
 
 .about .content ul {
@@ -653,7 +654,7 @@ section {
 .about .content ul i {
   flex-shrink: 0;
   font-size: 48px;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   margin-right: 20px;
   line-height: 0;
 }
@@ -766,6 +767,7 @@ section {
   overflow: hidden;
   margin-bottom: 15px;
   border-radius: 0;
+  background: #fff;
 }
 
 .services .card .card-img img {
@@ -781,13 +783,11 @@ section {
 }
 
 .services .card a {
-  color: #001973;
+  color: var(--color-secondary);
   transition: 0.3;
 }
 
-.services .card a:hover {
-  color: var(--color-primary);
-}
+
 
 .services .card p {
   padding: 0 30px;
@@ -798,6 +798,18 @@ section {
 
 .services .card:hover .card-img img {
   transform: scale(1.1);
+}
+
+.services .card:hover {
+  background: var(--color-primary);
+}
+
+.services .card:hover a{
+  color: #fff;
+}
+
+.services .card:hover p{
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -864,7 +876,7 @@ section {
 .features .features-item h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #001973;
+  color: var(--color-primary);
 }
 
 .features .features-item ul {
@@ -1927,6 +1939,6 @@ section {
 
 .info {
   padding: calc(var(--bs-gutter-x) * .5);
-  background: #2A2A2A;
+  background: var(--color-secondary);
   border-radius: 8px 0 0 8px;
 }
